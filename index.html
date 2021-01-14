@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>짝수 홀수 구분하기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>3의배수 찾기 프로그램</h2>
+    <div id = "display"></div>
+    <div id = "display2"></div>
+    <script>
+		
+        var k = 0;
+for(;;){
+    var userNumber = prompt("3의배수 찾기, 숫자를 입력해주세요")    
+    if(userNumber){    
+		for(var i = 1; i <= userNumber; i+=1){
+            if(i % 3 == 0){
+                document.write("&nbsp" + i);
+                k++;
+            }
+        }
+        document.querySelector("#display").innerHTML ="3의 배수의 갯수:" + k + "개"
+        break;
+    }
+
+    else{
+        alert("다시입력해주세요");
+        continue;
+    }
+}
+	</script>
+</body>
+</html>
